@@ -1,15 +1,19 @@
 # gnuenv
-For macOS switch to GNU commands with gnuenv on, back to BSD with gnuenv off.
+In macOS Terminal, switch to GNU commands with `gnuenv on`, back to BSD with `gnuenv off`.
 
-To install, use brew:
-```
-brew install gnuenv
-```
 
+To install, ~~use brew:~~
+
+~~brew install gnuenv~~
+
+For the time being, just use git:
+```
+git clone https://github.com/jstafford/gnuenv.git ~/gnuenv
+```
 
 Then in any shell you want to use GNU tools, source gnuenv as follows:
 ```
-source \usr\local\bin\gnuenv
+source ~/gnuenv/gnuenv.sh
 ```
 
 gnuenv is just a bash shell script, so it is pretty easy to understand how it
@@ -39,18 +43,20 @@ gnuenv off
 Acknowledgements
 ----------------
 
-This project heavily inspired by [VirtualEnv](https://virtualenv.pypa.io) for
+This project started from my desire to experiment with
+[OpenWrt](https://openwrt.org/), and my initial frustration at getting the build
+environment set up on my mac. As it turns out, this is a sledge hammer where a
+ball peen would have fixed the issue I had with OpenWrt, but I was far enough
+down this path when I realized that, I figured I might as well finish it off.
+
+My solution is heavily inspired by [VirtualEnv](https://virtualenv.pypa.io) for
 python by Ian Bicking. It would not be possible at all without the amazing
 [Homebrew](https://brew.sh/) project, and all the brew bottles for the GNU
 tools that this project exposes.
 
-This
+[//]: # (gnuenv uses the following brew bottles:)
 
-This project started from my desire to experiment with
-[OpenWrt](https://openwrt.org/), and my initial frustration at getting the build
-environment set up on my mac. As it turns out, this is a sledge hammer where a
-ball peen would have fixed the issue I had with OpenWrt, but was far enough down
-this path when I realized that, I figured I might as well finish it off.
+
 
 License
 -------
