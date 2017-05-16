@@ -241,7 +241,7 @@ gnuenv_help () {
 
 gnuenv_version () {
   # Show the version of gnuenv.
-  echo "gnuenv 1.0 by Jason Stafford. https://gnuenv.github.io"
+  echo "gnuenv 1.0 by Jason Stafford. https://jstafford.github.io/gnuenv/"
 }
 
 gnuenv () {
